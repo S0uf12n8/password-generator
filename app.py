@@ -9,8 +9,13 @@ def generate_passwd(numbers =12, digit=True, special=True):
     if special:
         characters += string.punctuation
     password = ''.join(random.choice(characters) for _ in range(numbers))
-    password += "s120802"
-    return password
+    
+    mark = "s120802"
+    insert_index = random.randint(0, len(password))  
+    mixed_password = password[:insert_index] + mark + password[insert_index:]
+
+    return mixed_password
+
 
 
 print(generate_passwd(16, True, True))
