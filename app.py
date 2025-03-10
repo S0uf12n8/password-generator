@@ -34,9 +34,7 @@ def generate_passwd(numbers =12, digit=True, special=True, importance_level=3):
 
 
 def save_to_excel(username, website, password, filename="passwords.xlsx"):
-    """
-    Save the username, website, and password to an Excel file.
-    """
+    
     data = {
         "Username": [username],
         "Website": [website],
@@ -45,7 +43,7 @@ def save_to_excel(username, website, password, filename="passwords.xlsx"):
     }
 
     try:
-        df = pd.read_excel(filename)  # Load existing file
+        df = pd.read_excel(filename)  
     except FileNotFoundError:
         df = pd.DataFrame(columns=["Username", "Website", "Password", "Date Created"])
 
@@ -69,19 +67,19 @@ def adjust_column_width(filename, df):
         ws.column_dimensions[ws.cell(1, col_idx).column_letter].width = max_length
 
     wb.save(filename)
-# Ask user for details
+
 username = input("Enter your username: ")
 website = input("Enter the website URL: ")
 importance = int(input("Enter password importance level (1-Low, 2-Medium, 3-High): "))
 
-# Generate password
+
 password_length = int(input("Enter the number of digits for the password: "))
 generated_password = generate_passwd(password_length, True, True, importance)
 
 
-# Save to Excel
+
 save_to_excel(username, website, generated_password)
 
-# Display password
+
 print(f"\n🔐 Your password for {website} is: {generated_password}")
-#print(generate_passwd(4, True, True, 2))  
+ 
