@@ -10,11 +10,11 @@ This is a 🐍 Python-based 🔑 password generator that allows users to 🔀 ge
 
 ⚖️ User-defined importance levels:
 
-🔴 High Importance → Includes 's1'
+    🔴 High Importance → Includes 's1'
 
-🟠 Medium Importance → Includes '208'
+    🟠 Medium Importance → Includes '208'
 
-🟢 Low Importance → Includes '02'
+    🟢 Low Importance → Includes '02'
 
 📂 Stores passwords, usernames, and website links in an 📊 Excel file.
 
