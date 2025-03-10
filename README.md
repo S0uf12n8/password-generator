@@ -32,21 +32,21 @@ Ensure you have 🐍 Python 3 installed. If not, download it from 🌍 python.or
 
 Run the following command to install the necessary dependencies:
 
-pip install pandas openpyxl
+    pip install pandas openpyxl
 
 🏃 Usage
 
 ▶️ Run the Script
 
-🖥️ Open your terminal or command prompt.
+1.🖥️ Open your terminal or command prompt.
 
-📂 Navigate to the project directory:
+2.📂 Navigate to the project directory:
 
-cd path/to/password-generator
+    cd path/to/password-generator
 
 ▶️ Run the script:
 
-python app.py
+    python app.py
 
 🔢 User Inputs
 
@@ -58,24 +58,24 @@ The program will prompt the user for:
 
 ⚖️ Password Importance Level:
 
-Enter 1️⃣ for Low
+    Enter 1️⃣ for Low
 
-Enter 2️⃣ for Medium
+    Enter 2️⃣ for Medium
 
-Enter 3️⃣ for High
+    Enter 3️⃣ for High
 
 🔢 Password Length → The number of characters for the password.
 
 🖥️ Example Interaction
 
-Enter your 👤 username: user123
-Enter the 🌐 website URL: https://example.com
-Enter password ⚖️ importance level (1️⃣ Low, 2️⃣ Medium, 3️⃣ High): 3️⃣
-Enter the number of 🔢 digits for the password: 16
+    Enter your 👤 username: user123
+    Enter the 🌐 website URL: https://example.com
+    Enter password ⚖️ importance level (1️⃣ Low, 2️⃣ Medium, 3️⃣ High): 3️⃣
+    Enter the number of 🔢 digits for the password: 16
 
-✅ Password saved successfully!
+    ✅ Password saved successfully!
 
-🔐 Your password for https://example.com is: AbC!s1Xy@123
+    🔐 Your password for https://example.com is: AbC!s1Xy@123
 
 📂 File Structure
 
